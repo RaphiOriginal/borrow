@@ -14,7 +14,7 @@
         <relationship name="lend" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BorrowElement" inverseName="borrowedBy" inverseEntity="BorrowElement" syncable="YES"/>
     </entity>
     <elements>
+        <element name="BorrowElement" positionX="-54" positionY="18" width="128" height="120"/>
         <element name="Person" positionX="-261" positionY="27" width="128" height="103"/>
-        <element name="BorrowElement" positionX="-54" positionY="18" width="128" height="118"/>
     </elements>
 </model>
