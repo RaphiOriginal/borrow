@@ -21,11 +21,11 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="447"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="93" id="Up7-iZ-kx4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="Up7-iZ-kx4">
                                         <rect key="frame" x="0.0" y="28" width="320" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Up7-iZ-kx4" id="QLI-jJ-Suf">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="92.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7E-EM-6sm">
@@ -54,9 +54,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="trL-1E-Xap" kind="push" id="k7i-ze-ZdT"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -64,7 +61,11 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Borrowed Items" id="ZYo-h2-EcR">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="20f-tN-NFa"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="20f-tN-NFa">
+                                            <connections>
+                                                <segue destination="c24-7G-jT6" kind="push" id="JJH-Zs-7hv"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -157,6 +158,20 @@
             </objects>
             <point key="canvasLocation" x="401" y="314"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pp9-WY-2Yn">
+            <objects>
+                <navigationController id="c24-7G-jT6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wDS-Lp-uZa"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yrC-dC-hCK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bS-OT-BK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="-303"/>
+        </scene>
         <!--NewBorrowItemView-->
         <scene sceneID="NdA-ob-NE1">
             <objects>
@@ -174,26 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKl-Gk-jSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1443" y="-303"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="d82-UT-mMe">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="trL-1E-Xap" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="XRC-9F-E5n"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aAR-fh-gBG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="si7-oF-U87" kind="relationship" relationship="rootViewController" id="o21-Tn-Vg4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="abp-M8-6ML" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="911" y="-303"/>
+            <point key="canvasLocation" x="1499" y="-303"/>
         </scene>
     </scenes>
     <resources>
