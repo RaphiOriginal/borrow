@@ -3,6 +3,7 @@
     <entity name="BorrowElement" syncable="YES">
         <attribute name="backDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="done" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="lendDate" attributeType="Date" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
         <relationship name="borrowedBy" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="lend" inverseEntity="Person" syncable="YES"/>
@@ -14,7 +15,7 @@
         <relationship name="lend" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BorrowElement" inverseName="borrowedBy" inverseEntity="BorrowElement" syncable="YES"/>
     </entity>
     <elements>
-        <element name="BorrowElement" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="BorrowElement" positionX="-54" positionY="18" width="128" height="135"/>
         <element name="Person" positionX="-261" positionY="27" width="128" height="103"/>
     </elements>
 </model>

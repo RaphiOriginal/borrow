@@ -22,6 +22,7 @@ class BorrowEelement : NSManagedObject {
     
     @NSManaged var lendDate:NSDate
     @NSManaged var backDate:NSDate?
+    @NSManaged var done:Bool
     
     func setCategory(cat:Category) -> (){
         category = cat.rawValue
