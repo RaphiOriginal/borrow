@@ -201,6 +201,25 @@
             </objects>
             <point key="canvasLocation" x="401" y="314"/>
         </scene>
+        <!--NewBorrowItemView-->
+        <scene sceneID="NdA-ob-NE1">
+            <objects>
+                <viewController title="NewBorrowItemView" id="si7-oF-U87" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FR2-bA-REM"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Q2-YK-fV4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QE9-BD-nyY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uub-ZU-GzC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKl-Gk-jSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="-303"/>
+        </scene>
     </scenes>
     <resources>
         <image name="list_35" width="35" height="35"/>
