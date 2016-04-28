@@ -72,7 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Borrows" image="list_35" selectedImage="list_50" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Borrows" image="list_25" selectedImage="list_25" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,7 +193,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="list_35" width="35" height="35"/>
-        <image name="list_50" width="50" height="50"/>
+        <image name="list_25" width="25" height="25"/>
     </resources>
 </document>
