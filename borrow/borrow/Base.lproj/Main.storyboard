@@ -198,28 +198,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uub-ZU-GzC"/>
+                    <connections>
+                        <outlet property="tblExpandable" destination="Hab-br-zwH" id="ku0-fx-k9N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKl-Gk-jSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2031" y="-303"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="iX3-DG-k85">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fXO-WZ-lnU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XAD-PJ-Ipg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="si7-oF-U87" kind="relationship" relationship="rootViewController" id="9f6-gJ-Kn9"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rFI-wA-H0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1499" y="-303"/>
         </scene>
     </scenes>
     <resources>
