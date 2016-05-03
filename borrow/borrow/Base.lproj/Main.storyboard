@@ -167,6 +167,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="si7-oF-U87" kind="relationship" relationship="rootViewController" id="40P-kt-koy"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bS-OT-BK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKl-Gk-jSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2031" y="-303"/>
+            <point key="canvasLocation" x="1463" y="-303"/>
         </scene>
     </scenes>
     <resources>
