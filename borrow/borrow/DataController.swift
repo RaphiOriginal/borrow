@@ -12,7 +12,7 @@ class DataController: NSObject {
     var managedObjectContext: NSManagedObjectContext
     override init() {
         // This resource is the same name as your xcdatamodeld contained in your project.
-        guard let modelURL = NSBundle.mainBundle().URLForResource("borrow", withExtension:"momd") else {
+        guard let modelURL = NSBundle.mainBundle().URLForResource("Model", withExtension:"momd") else {
             fatalError("Error loading model from bundle")
         }
         // The managed object model for the application. It is a fatal error for the application not to be able to find and load its model.
