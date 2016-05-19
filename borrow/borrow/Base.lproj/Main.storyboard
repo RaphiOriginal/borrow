@@ -146,6 +146,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lendDate" destination="FPc-6E-hGv" id="YdX-XY-6gF"/>
+                                            <outlet property="name" destination="FPc-6E-hGv" id="XWg-ZM-cRM"/>
+                                            <outlet property="title" destination="FPc-6E-hGv" id="kh3-C9-k7q"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

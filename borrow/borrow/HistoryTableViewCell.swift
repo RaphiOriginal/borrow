@@ -10,6 +10,10 @@ import UIKit
 
 class HistoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var title: UIView!
+    @IBOutlet weak var name: UIView!
+    @IBOutlet weak var lendDate: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
