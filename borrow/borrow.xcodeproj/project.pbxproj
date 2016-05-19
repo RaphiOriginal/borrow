@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F683B341CEDD51500F4D34B /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F683B331CEDD51500F4D34B /* HistoryTableViewController.swift */; };
+		2F683B361CEDDDF800F4D34B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F683B351CEDDDF800F4D34B /* DataController.swift */; };
 		2FA166B01CD20C72001D3A4B /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA166AC1CD20C72001D3A4B /* Person+CoreDataProperties.swift */; };
 		2FA166B11CD20C72001D3A4B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA166AD1CD20C72001D3A4B /* Person.swift */; };
 		2FA166B21CD20C72001D3A4B /* BorrowElement+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA166AE1CD20C72001D3A4B /* BorrowElement+CoreDataProperties.swift */; };
@@ -16,7 +18,6 @@
 		2FC9D7B81CBF799B0060D94A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC9D7B71CBF799B0060D94A /* Category.swift */; };
 		2FD8C8721CABC08D005B7DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8C8711CABC08D005B7DFF /* AppDelegate.swift */; };
 		2FD8C8741CABC08D005B7DFF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8C8731CABC08D005B7DFF /* FirstViewController.swift */; };
-		2FD8C8761CABC08D005B7DFF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8C8751CABC08D005B7DFF /* HistoryViewController.swift */; };
 		2FD8C8791CABC08D005B7DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD8C8771CABC08D005B7DFF /* Main.storyboard */; };
 		2FD8C87B1CABC08D005B7DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD8C87A1CABC08D005B7DFF /* Assets.xcassets */; };
 		2FD8C87E1CABC08D005B7DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD8C87C1CABC08D005B7DFF /* LaunchScreen.storyboard */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F683B331CEDD51500F4D34B /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		2F683B351CEDDDF800F4D34B /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2FA166AC1CD20C72001D3A4B /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "../Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2FA166AD1CD20C72001D3A4B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../Person.swift; sourceTree = "<group>"; };
 		2FA166AE1CD20C72001D3A4B /* BorrowElement+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BorrowElement+CoreDataProperties.swift"; path = "../BorrowElement+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -42,7 +45,6 @@
 		2FD8C86E1CABC08D005B7DFF /* borrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = borrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD8C8711CABC08D005B7DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD8C8731CABC08D005B7DFF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2FD8C8751CABC08D005B7DFF /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		2FD8C8781CABC08D005B7DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FD8C87A1CABC08D005B7DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FD8C87D1CABC08D005B7DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,8 +94,9 @@
 				F7242F491CD22D8E00A00B7E /* Custom Cells */,
 				2FD8C8711CABC08D005B7DFF /* AppDelegate.swift */,
 				2FC9D7B01CBEDF510060D94A /* Model.xcdatamodeld */,
+				2F683B351CEDDDF800F4D34B /* DataController.swift */,
 				2FD8C8731CABC08D005B7DFF /* FirstViewController.swift */,
-				2FD8C8751CABC08D005B7DFF /* HistoryViewController.swift */,
+				2F683B331CEDD51500F4D34B /* HistoryTableViewController.swift */,
 				2FD8C8771CABC08D005B7DFF /* Main.storyboard */,
 				2FA166B61CD24440001D3A4B /* HistoryTableViewCell.swift */,
 				2FD8C87A1CABC08D005B7DFF /* Assets.xcassets */,
@@ -202,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD8C8761CABC08D005B7DFF /* HistoryViewController.swift in Sources */,
 				2FD8C8721CABC08D005B7DFF /* AppDelegate.swift in Sources */,
 				F7242F481CD2270500A00B7E /* CustomCell.swift in Sources */,
 				2FA166B01CD20C72001D3A4B /* Person+CoreDataProperties.swift in Sources */,
@@ -214,6 +216,8 @@
 				F7242F461CD225FD00A00B7E /* NewBorrowElementView.swift in Sources */,
 				2FC9D7B81CBF799B0060D94A /* Category.swift in Sources */,
 				2FA166B21CD20C72001D3A4B /* BorrowElement+CoreDataProperties.swift in Sources */,
+				2F683B361CEDDDF800F4D34B /* DataController.swift in Sources */,
+				2F683B341CEDD51500F4D34B /* HistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
