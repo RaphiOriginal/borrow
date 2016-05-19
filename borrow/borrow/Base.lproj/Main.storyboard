@@ -172,6 +172,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="si7-oF-U87" kind="relationship" relationship="rootViewController" id="40P-kt-koy"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bS-OT-BK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,7 +183,7 @@
         <!--NewBorrowItemView-->
         <scene sceneID="NdA-ob-NE1">
             <objects>
-                <viewController title="NewBorrowItemView" id="si7-oF-U87" sceneMemberID="viewController">
+                <viewController title="NewBorrowItemView" id="si7-oF-U87" customClass="NewBorrowElementView" customModule="borrow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FR2-bA-REM"/>
                         <viewControllerLayoutGuide type="bottom" id="3Q2-YK-fV4"/>
@@ -188,13 +191,28 @@
                     <view key="view" contentMode="scaleToFill" id="QE9-BD-nyY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hab-br-zwH" userLabel="Tbl Expandable">
+                                <rect key="frame" x="-20" y="0.0" width="360" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hab-br-zwH" secondAttribute="trailing" constant="-20" id="Mbv-QP-i4e"/>
+                            <constraint firstAttribute="bottom" secondItem="Hab-br-zwH" secondAttribute="bottom" id="TuZ-b8-8jh"/>
+                            <constraint firstItem="Hab-br-zwH" firstAttribute="leading" secondItem="QE9-BD-nyY" secondAttribute="leading" constant="-20" id="aFz-b8-e7q"/>
+                            <constraint firstItem="Hab-br-zwH" firstAttribute="top" secondItem="QE9-BD-nyY" secondAttribute="top" id="bf6-Td-MlD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uub-ZU-GzC"/>
+                    <connections>
+                        <outlet property="tblExpandable" destination="Hab-br-zwH" id="ku0-fx-k9N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKl-Gk-jSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1499" y="-303"/>
+            <point key="canvasLocation" x="1463" y="-303"/>
         </scene>
     </scenes>
     <resources>
