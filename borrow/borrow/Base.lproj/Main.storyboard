@@ -217,7 +217,10 @@
                             <constraint firstItem="Hab-br-zwH" firstAttribute="top" secondItem="QE9-BD-nyY" secondAttribute="top" constant="20" symbolic="YES" id="bf6-Td-MlD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Borrow Element" id="Uub-ZU-GzC"/>
+                    <navigationItem key="navigationItem" title="Add Borrow Element" id="Uub-ZU-GzC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="FUe-3Z-wxq"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Je5-8R-6xW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tblExpandable" destination="Hab-br-zwH" id="ku0-fx-k9N"/>
                     </connections>
