@@ -218,14 +218,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Borrow Element" id="Uub-ZU-GzC">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="FUe-3Z-wxq"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Je5-8R-6xW"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="FUe-3Z-wxq">
+                            <connections>
+                                <segue destination="mhz-p7-CkJ" kind="unwind" unwindAction="cancelToFirstViewController:" id="Rvd-hk-ayg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Je5-8R-6xW">
+                            <connections>
+                                <segue destination="mhz-p7-CkJ" kind="unwind" unwindAction="saveNewBorrowElement:" id="BVt-HQ-pFf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tblExpandable" destination="Hab-br-zwH" id="ku0-fx-k9N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKl-Gk-jSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mhz-p7-CkJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2251" y="-341"/>
         </scene>
