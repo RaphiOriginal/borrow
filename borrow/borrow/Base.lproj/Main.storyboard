@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="600" id="8Pm-dL-9gi"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="Up7-iZ-kx4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="Up7-iZ-kx4" customClass="FirstTableViewCell" customModule="borrow" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Up7-iZ-kx4" id="QLI-jJ-Suf">
