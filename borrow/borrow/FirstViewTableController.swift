@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class FirstViewTableController: UIViewController {
     var borrows:[BorrowElement] = [BorrowElement]()
+    var fetchedResultsController: NSFetchedResultsController!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +49,24 @@ class FirstViewTableController: UIViewController {
         return cell
     }
     
-    /*
+    
+    func loadBorrowElements(){
+        let borrowsFetch = NSFetchRequest(entityName: "BorrowElement")
+        borrowsFetch.predicate = NSPredicate(format: "done == true")
+        let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).dataController.managedObjectContext
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: borrowsFetch, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
+        
+        do {
+            try fetchedResultsController.performFetch()
+            borrows = fetchedResultsController.fetchedObjects as! [BorrowElement]
+        } catch {
+            fatalError("Failed to initialize FetchedResultsController: \(error)")
+        }
+    }
+    
+    
+        /*
      // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
