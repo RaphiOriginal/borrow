@@ -21,6 +21,8 @@
 		2FD8C8791CABC08D005B7DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD8C8771CABC08D005B7DFF /* Main.storyboard */; };
 		2FD8C87B1CABC08D005B7DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD8C87A1CABC08D005B7DFF /* Assets.xcassets */; };
 		2FD8C87E1CABC08D005B7DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD8C87C1CABC08D005B7DFF /* LaunchScreen.storyboard */; };
+		F6D36A271D003EA800FCBE39 /* FirstViewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D36A261D003EA800FCBE39 /* FirstViewTableController.swift */; };
+		F6D36A291D0040ED00FCBE39 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D36A281D0040ED00FCBE39 /* FirstTableViewCell.swift */; };
 		F7242F461CD225FD00A00B7E /* NewBorrowElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7242F451CD225FD00A00B7E /* NewBorrowElementView.swift */; };
 		F7242F481CD2270500A00B7E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7242F471CD2270500A00B7E /* CustomCell.swift */; };
 		F7242F4B1CD22DA900A00B7E /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7242F4A1CD22DA900A00B7E /* SwitchCell.xib */; };
@@ -49,6 +51,8 @@
 		2FD8C87A1CABC08D005B7DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FD8C87D1CABC08D005B7DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FD8C87F1CABC08D005B7DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D36A261D003EA800FCBE39 /* FirstViewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewTableController.swift; sourceTree = "<group>"; };
+		F6D36A281D0040ED00FCBE39 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		F7242F451CD225FD00A00B7E /* NewBorrowElementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBorrowElementView.swift; sourceTree = "<group>"; };
 		F7242F471CD2270500A00B7E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F7242F4A1CD22DA900A00B7E /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		2FD8C8701CABC08D005B7DFF /* borrow */ = {
 			isa = PBXGroup;
 			children = (
+				F6D36A261D003EA800FCBE39 /* FirstViewTableController.swift */,
 				F7242F561CD22E2000A00B7E /* CellDescriptor.plist */,
 				F7242F491CD22D8E00A00B7E /* Custom Cells */,
 				2FD8C8711CABC08D005B7DFF /* AppDelegate.swift */,
@@ -109,6 +114,7 @@
 				2FC9D7B71CBF799B0060D94A /* Category.swift */,
 				F7242F451CD225FD00A00B7E /* NewBorrowElementView.swift */,
 				F7242F471CD2270500A00B7E /* CustomCell.swift */,
+				F6D36A281D0040ED00FCBE39 /* FirstTableViewCell.swift */,
 			);
 			path = borrow;
 			sourceTree = "<group>";
@@ -206,11 +212,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FD8C8721CABC08D005B7DFF /* AppDelegate.swift in Sources */,
+				F6D36A271D003EA800FCBE39 /* FirstViewTableController.swift in Sources */,
 				F7242F481CD2270500A00B7E /* CustomCell.swift in Sources */,
 				2FA166B01CD20C72001D3A4B /* Person+CoreDataProperties.swift in Sources */,
 				2FA166B31CD20C72001D3A4B /* BorrowElement.swift in Sources */,
 				2FD8C8741CABC08D005B7DFF /* FirstViewController.swift in Sources */,
 				2FA166B71CD24440001D3A4B /* HistoryTableViewCell.swift in Sources */,
+				F6D36A291D0040ED00FCBE39 /* FirstTableViewCell.swift in Sources */,
 				2FA166B11CD20C72001D3A4B /* Person.swift in Sources */,
 				2FC9D7B21CBEDF510060D94A /* Model.xcdatamodeld in Sources */,
 				F7242F461CD225FD00A00B7E /* NewBorrowElementView.swift in Sources */,
