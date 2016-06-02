@@ -113,7 +113,7 @@ class NewBorrowElementView: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Personal"
+            return "Item"
             
         case 1:
             return "Category"
