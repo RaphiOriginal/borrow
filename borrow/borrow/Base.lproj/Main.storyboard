@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Up7-iZ-kx4" id="QLI-jJ-Suf">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="93"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="92.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7E-EM-6sm">
@@ -217,7 +217,7 @@
                             <constraint firstItem="Hab-br-zwH" firstAttribute="top" secondItem="QE9-BD-nyY" secondAttribute="top" constant="20" symbolic="YES" id="bf6-Td-MlD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Uub-ZU-GzC"/>
+                    <navigationItem key="navigationItem" title="Add Borrow Element" id="Uub-ZU-GzC"/>
                     <connections>
                         <outlet property="tblExpandable" destination="Hab-br-zwH" id="ku0-fx-k9N"/>
                     </connections>
