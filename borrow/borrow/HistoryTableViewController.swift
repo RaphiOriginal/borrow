@@ -104,6 +104,7 @@ class HistoryViewController: UIViewController {
     
     func loadBorrowElements(){
         let borrowsFetch = NSFetchRequest(entityName: "BorrowElement")
+        borrowsFetch.predicate = NSPredicate(format: "done == false")
         let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).dataController.managedObjectContext
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: borrowsFetch, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
